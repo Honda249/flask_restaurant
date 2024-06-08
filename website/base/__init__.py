@@ -23,18 +23,12 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
-    # a simple page that says hello
-    #@app.route('/hello')
-    #def hello():
-    #    return 'Hello, World!'
-
+    # register routes
+    
     from . import auth
     from . import views
 
-
     app.register_blueprint(auth.bp)
-
     app.register_blueprint(views.bp)
 
     return app
