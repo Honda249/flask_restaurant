@@ -1,6 +1,6 @@
 from flask import Blueprint , render_template
 
-bp = Blueprint('views',__name__,url_prefix='/views')
+bp = Blueprint('views',__name__,url_prefix='')
 
 @bp.route('/')
 def home():
