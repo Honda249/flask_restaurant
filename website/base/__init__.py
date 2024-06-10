@@ -37,6 +37,7 @@ def create_app(test_config=None):
 
     app.register_blueprint(auth_views.bp)
     app.register_blueprint(views.bp)
+    app.register_blueprint(reservation_views.bp)
 
     from .models import User , Table , Reservation
 

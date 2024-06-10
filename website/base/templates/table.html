@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+
+{% block title %} Table Details {% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <a href="/">Return Home</a>
+    <h3>{{table}}</h3>
+    <p>Table Description </p>
+    <br>
+    <a href="/reservation">Reserve This Table</a>
+</div>
+{% endblock %}
