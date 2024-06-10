@@ -30,7 +30,10 @@ def create_app(test_config=None):
         pass
     # register routes
     
-    from . import views , auth_views , reservation_views
+    from .views import bp
+    from .auth_views import bp
+    from .reservation_views import bp
+
 
     app.register_blueprint(auth_views.bp)
     app.register_blueprint(views.bp)
