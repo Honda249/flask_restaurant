@@ -12,6 +12,7 @@ class User(db.Model, UserMixin):
     user_name = db.Column(db.String(150))
     reservations = db.relationship('Reservation')
 
+
 # Reservation model
 class Reservation(db.Model):
     id = db.Column(db.Integer, primary_key=True)

@@ -8,6 +8,7 @@ bp = Blueprint('auth',__name__,url_prefix='/auth')
 def login():
     return render_template("login.html")
 
+
 @bp.route('/logout')
 def logout():
     return render_template("logout.html")

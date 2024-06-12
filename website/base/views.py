@@ -6,3 +6,4 @@ bp = Blueprint('views',__name__,url_prefix='')
 def home():
     return render_template("home.html")
     
+    
